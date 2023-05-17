@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
+      height: 2000px;
       padding: 0px;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +70,7 @@
 </head>
 
 <body>
+  
 
   <div class="top-container">
     <a
@@ -141,6 +143,15 @@
             header.classList.remove("sticky");
           }
         }
+      </script>
+      <script>
+        // Function to scroll the page up by 20 pixels
+        function scrollUp() {
+          window.scroll(0, 55);
+        }
+    
+        // Wait for 5 seconds and then scroll up
+        setTimeout(scrollUp, 5000);
       </script>
 
 </body>
