@@ -103,15 +103,16 @@
       textColor: '#ffffff',
       branding: true
     });
-
-    // Add event listener for beforeunload event
-    window.addEventListener('beforeunload', function() {
-      // Refresh the page when the popup is closed
-      location.reload();
-    });
   }
+
+  // Add event listener for unload event
+  window.addEventListener('unload', function() {
+    // Refresh the page when the popup is closed
+    location.reload();
+  });
 </script>
 <!-- Calendly badge widget end -->
+
 
     <div class="inside">
 
